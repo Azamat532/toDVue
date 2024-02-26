@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+input, button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(2, 203, 203);
+}
+
+.btn {
+    background: rgb(2, 203, 203);
+    padding: 20px 50px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}

@@ -1,0 +1,68 @@
+@import "common.scss";
+
+.to-do {
+    width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        width: 100%;
+        position: relative;
+
+        &-input {
+            background: #f1efef;
+            width: 100%;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+        &-btn {
+            position: absolute;
+            font-size: 40px;
+            color: rgb(2, 203, 203);
+            top: 5px;
+            right: 15px;
+            cursor: pointer;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+        .txt {
+            .circle {
+                width: 15px;
+                height: 15px;
+                border: 1px solid #000;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 10px; 
+                cursor: pointer;
+
+            }
+            &.completed {
+                .circle {
+                    background: rgb(2, 203, 203);
+                }
+            }
+            
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+
+    }
+}
